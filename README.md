@@ -99,6 +99,10 @@ curl http://localhost:3000/api/saludo
 ---
 
 ## **11. Instalar kubectl**
+```bash
+brew install kubectl
+kubectl version --client
+```
 
 ---
 

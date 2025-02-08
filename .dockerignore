@@ -1,0 +1,21 @@
+# Ignorar módulos de Node.js (se instalan dentro del contenedor).
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Archivos de entorno y configuración sensible.
+*.local
+
+# Archivos de logs.
+logs
+*.log
+
+# Caché y dependencias innecesarias.
+.cache/
+.history/
+dist/
+build/
+
+# Archivos de Docker y Kubernetes innecesarios.
+docker-compose.override.yml

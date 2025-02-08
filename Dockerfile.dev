@@ -1,0 +1,8 @@
+# Imagen base de Node.js
+FROM node:18-alpine
+
+# Se define el directorio de trabajo dentro del contenedor.
+WORKDIR /app
+
+# Mantener el contenedor activo.
+CMD ["sh"]

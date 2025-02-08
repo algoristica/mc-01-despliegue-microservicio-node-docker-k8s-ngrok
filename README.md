@@ -323,3 +323,33 @@ ngrok http http://localhost:8080
 ```bash
 curl https://<URL_GENERADA_POR_NGROK>/api/saludo
 ```
+
+# Solución a la práctica propuesta
+
+## **1. Modificar el código del src/index.js**
+
+## **2. Construir una nueva imagen con la versión v2.**
+```bash
+docker build -t microservicio:v2 .
+```
+
+## **3. Cargar la nueva imagen en Minikube..**
+```bash
+minikube image load microservicio:v2
+```
+
+## **4. Actualizar deployment.yaml para apuntar a la nueva imagen.**
+
+## **5. Aplicar los cambios en Kubernetes.**
+```bash
+kubectl apply -f k8s/
+kubectl delete pod --all
+```
+
+## **6. Verificar que el servicio sigue corriendo.**
+```bash
+kubectl get pods
+kubectl get services
+```
+
+## **7. Hacer port-forward y usar ngrok.**

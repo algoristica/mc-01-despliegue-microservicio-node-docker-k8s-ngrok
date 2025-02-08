@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/saludo", (req, res) => {
-  res.json({ mensaje: "¡Hola desde el microservicio en Docker!" });
+  res.json({ mensaje: "¡Hola desde la versión 2 del microservicio en Kubernetes!" });
 });
 
 const PORT = process.env.PORT || 3000;
